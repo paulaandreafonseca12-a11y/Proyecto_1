@@ -106,12 +106,7 @@ body {
     background: #000;
 }
 
-/* =============================================
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 
 .plan-card {
   background: #fff;
@@ -197,26 +192,23 @@ body {
 
 .card__btn:hover {
   background: #000;
-<!-- /* =============================================
-   ESTILOS SECCIÓN HERO - Content Specialist
-   Concepto: High Performance & Elite Fitness
-   ============================================= */
+}
 
 :root {
     --primary-color: #ff3e3e;
-    /* Rojo intenso para acción */
+    
     --dark-bg: #0a0a0a;
-    /* Negro profundo */
+    
     --light-text: #ffffff;
     --gray-text: #a0a0a0;
     --font-main: 'Montserrat', sans-serif;
-    /* Sugerida para el equipo */
+    
 }
 
 .hero-section {
     position: relative;
     height: 100vh;
-    /* Ocupa toda la pantalla */
+    
     display: flex;
     align-items: center;
     background: url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1470&auto=format&fit=crop') no-index center/cover no-repeat;
@@ -225,7 +217,7 @@ body {
     overflow: hidden;
 }
 
-/* Capa oscura para legibilidad del texto */
+
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -280,7 +272,7 @@ body {
     margin-bottom: 2.5rem;
 }
 
-/* Botones */
+
 .hero-cta {
     display: flex;
     gap: 1.5rem;
@@ -315,7 +307,7 @@ body {
     color: black;
 }
 
-/* Estadísticas rápidas */
+
 .hero-stats {
     display: flex;
     gap: 3rem;
@@ -335,7 +327,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Responsive sencillo */
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -349,7 +341,7 @@ body {
         gap: 1rem;
     }
 
-    /* valentina header*/
+    
     * {
         margin: 0;
         padding: 0;
