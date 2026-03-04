@@ -12,3 +12,144 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+<!-- /* =============================================
+   ESTILOS SECCIÓN HERO - Content Specialist
+   Concepto: High Performance & Elite Fitness
+   ============================================= */
+
+:root {
+    --primary-color: #ff3e3e; /* Rojo intenso para acción */
+    --dark-bg: #0a0a0a;       /* Negro profundo */
+    --light-text: #ffffff;
+    --gray-text: #a0a0a0;
+    --font-main: 'Montserrat', sans-serif; /* Sugerida para el equipo */
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1470&auto=format&fit=crop') no-index center/cover no-repeat;
+    color: var(--light-text);
+    font-family: var(--font-main);
+    overflow: hidden;
+}
+
+/* Capa oscura para legibilidad del texto */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.4) 100%);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.badge-performance {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.text-accent {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--gray-text);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* Botones */
+.hero-cta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.btn-main {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #d32f2f;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+/* Estadísticas rápidas */
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    text-transform: uppercase;
+}
+
+/* Responsive sencillo */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-cta { flex-direction: column; }
+    .hero-stats { gap: 1rem; }
+}
