@@ -1,108 +1,344 @@
-
 :root {
---primary-color: #4F46E5;
---secondary-color: #10B981;
---dark-bg: #1F2937;
---font-main: 'Poppins', sans-serif;
+    --primary-color: #4F46E5;
+    --secondary-color: #10B981;
+    --dark-bg: #1F2937;
+    --font-main: 'Poppins', sans-serif;
 }
 
 body {
-font-family: var(--font-main);
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 .cards-grid {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .plan-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  width: 280px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
 }
 
 .card__badge {
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: #666;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #666;
 }
 
 .card__icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 0.5rem;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .card__title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
 }
 
 .card__subtitle {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
 .card__stats {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .stat {
-  flex: 1;
-  background: #f5f5f5;
-  border-radius: 6px;
-  padding: 0.5rem;
-  text-align: center;
+    flex: 1;
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .stat__value {
-  font-size: 1.1rem;
-  font-weight: bold;
-  display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
 }
 
 .stat__label {
-  font-size: 0.65rem;
-  color: #888;
+    font-size: 0.65rem;
+    color: #888;
 }
 
 .card__exercises {
-  list-style: none;
-  margin-bottom: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
 }
 
 .card__exercises li {
-  font-size: 0.85rem;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid #eee;
-  color: #444;
+    font-size: 0.85rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
 }
 
 .card__btn {
-  width: 100%;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 6px;
-  background: #333;
-  color: #fff;
-  font-size: 0.9rem;
-  cursor: pointer;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
 }
 
 .card__btn:hover {
-  background: #000;
+    background: #000;
 }
+
+/* =============================================
+   ESTILOS SECCIÓN HERO - Content Specialist
+   Concepto: High Performance & Elite Fitness
+   ============================================= */
+
+:root {
+    --primary-color: #ff3e3e;
+    /* Rojo intenso para acción */
+    --dark-bg: #0a0a0a;
+    /* Negro profundo */
+    --light-text: #ffffff;
+    --gray-text: #a0a0a0;
+    --font-main: 'Montserrat', sans-serif;
+    /* Sugerida para el equipo */
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    /* Ocupa toda la pantalla */
+    display: flex;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1470&auto=format&fit=crop') no-index center/cover no-repeat;
+    color: var(--light-text);
+    font-family: var(--font-main);
+    overflow: hidden;
+}
+
+/* Capa oscura para legibilidad del texto */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.badge-performance {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.text-accent {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--gray-text);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* Botones */
+.hero-cta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.btn-main {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #d32f2f;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: black;
+}
+
+/* Estadísticas rápidas */
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    text-transform: uppercase;
+}
+
+/* Responsive sencillo */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+    }
+
+    /* valentina header*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #111;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .logo h1 {
+        color: #f39c12;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #f39c12;
+    }
+
+    .hero {
+        height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 12px 25px;
+        background-color: #f39c12;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #d35400;
+    }
+}
+    
